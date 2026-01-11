@@ -1,1 +1,66 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #0077cc; /* استخدم اللون من Figma */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Banner section */
+.banner {
+    background-image: url('banner.jpg'); /* ضع رابط الصورة من Figma */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+/* Quotes section */
+.quotes {
+    background-color: #e0f7fa;
+    padding: 40px 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Videos section */
+.videos {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Membership section */
+.membership {
+    padding: 40px 20px;
+    background-color: #ffebee;
+}
+
+/* FAQ section */
+.faq {
+    padding: 40px 20px;
+    background-color: #f1f8e9;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
 
