@@ -1,0 +1,146 @@
+/* ====== Reset CSS ====== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ====== Variables ====== */
+:root {
+    --primary-color: #FF6565;
+    --secondary-color: #333;
+    --bg-color: #f5f5f5;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* ====== Base Styles ====== */
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ====== Header ====== */
+.site-header {
+    background-color: white;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.main-nav a {
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* ====== What We Do Section ====== */
+.what-we-do,
+.our-results {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.what-we-do h2,
+.our-results h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.what-we-do p,
+.our-results p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+}
+
+/* Features Grid */
+.features,
+.results {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Feature / Result Box */
+.feature,
+.result {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover,
+.result:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.feature .icon,
+.result .icon {
+    font-size: 50px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.feature h3,
+.result h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.feature p,
+.result p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 480px) {
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .features,
+    .results {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .feature,
+    .result {
+        width: 100%;
+    }
+}
